@@ -164,7 +164,7 @@ box-sizing: border-box;
 .btn__text{
     background: linear-gradient(120deg, #3498db, #8e44ad);
     background-size: 200%;
-  -webkit-background-clip: text;  
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
     transition: .3s linear;
 }
