@@ -1,0 +1,174 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+/*animated*/
+.animated-text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+  background-size: 200%;
+  padding: 0 300px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s linear;
+  border-radius: 20px;
+  font-family: 'Faster One', cursive;
+}
+.animated-line {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 140px;
+  line-height: 230px;
+  user-select: none;
+}
+.animated-line:first-child {
+  animation: anim 12s infinite;
+}
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -230px;
+  }
+  33% {
+    margin-top: -460px;
+  }
+  50% {
+    margin-top: -690px;
+  }
+  66% {
+    margin-top: -460px;
+  }
+  82% {
+    margin-top: -230px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+/*header*/
+.header{
+    width: 100%;
+    height: 937px;
+     background: url("../img/giphy1.gif");
+      background-size: cover;
+}
+
+
+
+
+.section1{
+    background: url("../img/wp1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    word-wrap: break-word;
+    width: 100%;
+    min-height: 940px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2{
+    background-color: #36096d;
+    background-image: url(../img/wp2.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+    word-wrap: break-word;
+    width: 100%;
+    min-height: 940px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3{
+    background-color: #7f5a83;
+    background-image: url(../img/wp3.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+    word-wrap: break-word;
+    width: 100%;
+    min-height: 940px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*nav*/
+.nav {
+  width: 100%;
+  text-align: center;
+  padding: 4.2rem 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+    text-transform: uppercase;
+}
+.nav a:hover {
+  color: #333;
+}
+
+/*btn*/
+.btn {
+    display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  justify-content: space-between;
+  text-decoration: none;
+    
+  padding: 0 1.4rem;
+  
+  color: #ffffff;
+    
+  border: none;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+
+.btn__text{
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    background-size: 200%;
+  -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    transition: .3s linear;
+}
+
+
+
+
