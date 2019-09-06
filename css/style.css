@@ -245,6 +245,7 @@ box-sizing: inherit;
   -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
     transition: .3s linear;
+    user-select: none;
 }
 
 /*icon*/
