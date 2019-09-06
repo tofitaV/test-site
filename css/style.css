@@ -181,6 +181,7 @@ box-sizing: inherit;
     margin: 15px;
     user-select: none;
     transition: .3s linear;
+
 }
 
 .about__item:hover{
