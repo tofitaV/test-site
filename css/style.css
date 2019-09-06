@@ -248,9 +248,7 @@ box-sizing: inherit;
 
 /*3d card*/
 
-.social__img{
-    position: relative;
-}
+
 
 .middle{
     text-align: center;
@@ -284,12 +282,16 @@ box-sizing: inherit;
 }
 
 .back__card{
+    
     height: 100%;
     transform: perspective(600px) rotateY(180deg);
 }
 
 .back__content{
-    
+    display: none;
+    width: 340px;
+    height: 480px;
+    background: white;
     color: #2c3e50;
     text-align: center;
     width: 100%;
@@ -321,12 +323,79 @@ box-sizing: inherit;
 }
 .back__card:hover .social{
     display: block;
+    background: white;
+    display: block;
 }
 
 .card:hover > .front__card{
     transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover > .back__card{    
+.card:hover > .back__card{ 
+    display: block;
     transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+
+
+
+/*mdeia*/
+@media (max-width: 1230px){
+    .animated-text{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 990px){
+    
+    .animated-line{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 770px){
+    .animated-line{
+        font-size: 65px;
+    }
+    
+}
+
+/*mobile*/
+@media (max-width: 575px){
+    
+    .animated-text{
+        padding: 0 70px;
+    }
+    
+    .about__item{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .animated-line{
+        font-size: 50px;
+    }
+    
+    .btn{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 430px){
+    
+    .about__item{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .animated-text{
+        padding: 0 40px;
+    }
+    .animated-line{
+        font-size: 38px;
+    }
+    
 }
