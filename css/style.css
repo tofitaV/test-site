@@ -237,6 +237,12 @@ box-sizing: inherit;
   outline: none;
   
 }
+.counter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .1;
+}
 
 
 .btn__text{
