@@ -1,15 +1,22 @@
+html{
+    box-sizing: border-box;
+}
+
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding: 0;
   margin: 0;
+  
 }
 
 *,
 *:after,
 *:before {
   margin: 0;
-box-sizing: border-box;
+box-sizing: inherit;
 }
 
 
@@ -31,7 +38,7 @@ box-sizing: border-box;
   transform: translate(-50%, -50%);
   background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
   background-size: 200%;
-  padding: 0 300px;
+  padding: 0 200px;
   height: 200px;
   overflow: hidden;
   cursor: pointer;
@@ -82,9 +89,9 @@ box-sizing: border-box;
 
 
 
-
+/*section*/
 .section1{
-    background: url("../img/wp1.jpg");
+    background: url("../img/L1.jpg");
     background-size: cover;
     background-attachment: fixed;
     word-wrap: break-word;
@@ -92,14 +99,13 @@ box-sizing: border-box;
     min-height: 940px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .section2{
     background-color: #36096d;
-    background-image: url(../img/wp2.jpg);
-
+    background-image: url(../img/L2.jpg);
+    
     background-size: cover;
     background-attachment: fixed;
     word-wrap: break-word;
@@ -113,7 +119,7 @@ box-sizing: border-box;
 
 .section3{
     background-color: #7f5a83;
-    background-image: url(../img/wp3.jpg);
+    background-image: url(../img/L3.jpg);
 
     background-size: cover;
     background-attachment: fixed;
@@ -125,6 +131,72 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
+
+/*about*/
+
+.about{
+    width: 100%;
+    text-align: center;
+}
+
+.about__title{
+    display: inline-block;
+    width: 100%;
+    font-size: 50px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+    
+    
+    background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+    background-size: 100% 4px;
+    background-position:bottom 0 left 0,bottom 5px left 0;
+    background-repeat:no-repeat;
+    
+    
+}
+
+
+
+.about__blocks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
+.about__item{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+    background-size: 200%;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    user-select: none;
+    transition: .3s linear;
+}
+
+.about__item:hover{
+    bottom: 20px;
+    background-position: right;
+     transform: scale(1.2);
+}
+
+.about__me p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
 
 
 /*nav*/
@@ -164,11 +236,19 @@ box-sizing: border-box;
 .btn__text{
     background: linear-gradient(120deg, #3498db, #8e44ad);
     background-size: 200%;
-    -webkit-background-clip: text;  
+  -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
     transition: .3s linear;
 }
 
 
+
+
+
+
+
+
+/*  
+*/
 
 
