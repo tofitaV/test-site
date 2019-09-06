@@ -264,6 +264,7 @@ box-sizing: inherit;
     align-items: center;
     width: 33%;
     height: 100%;
+    user-select: none;
 }
 
 .social__item:hover .social__icon{
