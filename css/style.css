@@ -284,23 +284,26 @@ box-sizing: inherit;
 }
 
 .back__card{
-    background: #f1f1f1;
+    height: 100%;
     transform: perspective(600px) rotateY(180deg);
 }
 
 .back__content{
+    
     color: #2c3e50;
     text-align: center;
     width: 100%;
+    top: 50%;
 }
 
 .social{
+    display: none;
     top: 50%;
     margin: 20px 0;
 }
 
 .social a{
-    display: inline-flex;
+    
     width: 40px;
     height: 40px;
     justify-content: center;
@@ -312,14 +315,18 @@ box-sizing: inherit;
 }
 
 .social a:hover{
+    
     background: #2c3e50;
     color: white;
+}
+.back__card:hover .social{
+    display: block;
 }
 
 .card:hover > .front__card{
     transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover > .back__card{
+.card:hover > .back__card{    
     transform: perspective(600px) rotateY(0deg);
 }
